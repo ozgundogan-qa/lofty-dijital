@@ -36,11 +36,11 @@ export default function BrandKitPage() {
                                 <img
                                     alt="Ana Logo"
                                     className="w-3/4 h-auto object-contain relative z-10"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZaxkHQI3qdInHOEUMAdmW0QF2DKQpuHfUcXSDeK4czCHviBHH12dLGoZPBlEypDRvRZ7C1mCTxm2F0gcRNrMx0Kk0HJAd5DDDEfecTBO6voMwjGM-_iVY986FwMW0j0bV3o7iVyj5gMgc0Xy4DJHlr21eapYA-sq1qTvdner_XuKkBubHulsuXDqLDZ6jyvdrJVer8gNS5GB3p1Fl0L9rYPi4QTLCWX4hAdNlc2ROfAIjKN0F7QAy8vRh3BEGGiwA0ohgs7vBmCg"
+                                    src="/logos/dikey-logo.png"
                                 />
                             </div>
                             <div>
-                                <h4 className="text-lg font-bold text-white">Ana Logo</h4>
+                                <h4 className="text-lg font-bold text-white">Dikey Logo</h4>
                                 <p className="text-slate-400 text-sm mt-1">Koyu zeminler için öncelikli kullanım. Kurumsal kimliğin temel taşı.</p>
                             </div>
                         </div>
@@ -50,7 +50,7 @@ export default function BrandKitPage() {
                                 <img
                                     alt="Monogram"
                                     className="h-24 w-24 object-contain relative z-10"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiYWiIi4xm3EazjhyhTj_nJ2xZ0jcBSCt25OAq3mtkez8fh6rM7W3ONjWHOdiiajMDtX4nayP6Rk34hkjezfIHqnJWTz4HYPP28fH-FlatKuqnMI-iNa_Dh85viRN5QLwXU3pFSCtWFTEuJwjWPEroODKq1fOiwe5DIyq-HOX45S4BFaApQszH5vD9JvTkLxlUzr5CHOnivNLCu-EkXy3TDRzjDcUA8VjOr2Jb4lRnEbNIm7HN2czbcWWX3uKVLclEYDk6bljJU3M"
+                                    src="/logo.png"
                                 />
                             </div>
                             <div>
@@ -65,11 +65,11 @@ export default function BrandKitPage() {
                                 <img
                                     alt="Yatay Logo"
                                     className="w-4/5 h-auto object-contain relative z-10 opacity-90"
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6rrUCyhVoE6Bf4GGTo2rj_OoAg9YuU4bj8rUHSJYBoZ60onSnb36FWQwFWF4smlL-IBJY1O9p5A3kmf0NDYSCf2U-vsWFofd0t3-VdYue7-PZ0Xj3Pskw_Q6L58ORhFhZ3PaSgNjtZ3KHqJVHdvoED_msIxKG7JIvqA3xoji0yUF2H2SWDRRXNHRPtGmo4L-Fq_HMyJXaepbxFXncbb79eVA4Lz46VV5N7fY2R5L5pUGElNhhORjcFPACZ9lFbvIVJ6-nnaz6SCQ"
+                                    src="/logos/yatay-web.png"
                                 />
                             </div>
                             <div>
-                                <h4 className="text-lg font-bold text-white">Yatay Logo (Beyaz)</h4>
+                                <h4 className="text-lg font-bold text-white">Yatay Logo (Renkli)</h4>
                                 <p className="text-slate-400 text-sm mt-1">Renkli veya karmaşık zeminler için tek renk beyaz kullanım.</p>
                             </div>
                         </div>
