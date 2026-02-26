@@ -52,6 +52,8 @@ const TypewriterText = ({ text, className = "" }: { text: string; className?: st
   </span>
 );
 
+import { JsonLd } from "@/components/geo/JsonLd";
+
 export default function Home() {
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -60,8 +62,17 @@ export default function Home() {
   });
   const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
 
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Lofty Dijital',
+    url: 'https://www.loftydijital.com',
+    description: 'Minimalist, lüks ve modern dijital çözümlerle markanızı geleceğe taşıyın.'
+  };
+
   return (
     <main className="flex-1">
+      <JsonLd data={websiteSchema} />
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-[600px] flex items-center justify-center p-6 lg:p-12 overflow-hidden">
         {/* Parallax Background */}

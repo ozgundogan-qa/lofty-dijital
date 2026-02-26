@@ -2,6 +2,8 @@ import { featuredServices, iconMap } from "@/constants/featuredServices";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, CheckCircle2, MessageSquare, ArrowRight } from "lucide-react";
+import { JsonLd } from "@/components/geo/JsonLd";
+import { AuthorMeta } from "@/components/geo/AuthorMeta";
 
 export function generateStaticParams() {
     return featuredServices.map((service) => ({
@@ -19,8 +21,21 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
     const Icon = iconMap[service.icon];
 
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": service.title,
+        "description": service.desc,
+        "provider": {
+            "@type": "Organization",
+            "name": "Lofty Dijital",
+            "url": "https://www.loftydijital.com"
+        }
+    };
+
     return (
         <main className="flex-grow w-full pb-20">
+            <JsonLd data={serviceSchema} />
             {/* Hero Section */}
             <section className="relative w-full h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 z-0">
@@ -57,6 +72,16 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                 <div className="lg:col-span-7 flex flex-col gap-10">
                     <div>
                         <h2 className="text-3xl font-bold text-white mb-6">Hizmet Detayları</h2>
+
+                        <AuthorMeta
+                            authorName="Lofty Ekibi"
+                            datePublished="2024-01-15T08:00:00+03:00"
+                            dateModified="2024-02-20T08:00:00+03:00"
+                            articleTitle={service.title}
+                            articleDescription={service.desc}
+                            articleUrl={`https://www.loftydijital.com/hizmetlerimiz/${slug}`}
+                        />
+
                         <p className="text-lg text-slate-300 leading-relaxed">
                             {service.longDescription}
                         </p>

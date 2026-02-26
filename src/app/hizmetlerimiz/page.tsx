@@ -1,19 +1,29 @@
 import Link from "next/link";
 import { MoveDown, ArrowRight, Share2, Monitor, Video, Camera, TrendingUp } from "lucide-react";
 import { featuredServices, iconMap } from "@/constants/featuredServices";
+import { JsonLd } from "@/components/geo/JsonLd";
+import { FaqSection } from "@/components/geo/FaqSection";
 
 export default function ServicesPage() {
+    const serviceSchema = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Lofty Dijital Hizmetler",
+        "description": "Markanızın dijital dünyada parlaması için stratejik, estetik ve sonuç odaklı hizmetler sunuyoruz."
+    };
+
     return (
         <main className="flex-grow w-full max-w-7xl mx-auto px-6 py-12 flex flex-col gap-16">
+            <JsonLd data={serviceSchema} />
             {/* Hero Section */}
             <section className="flex flex-col md:flex-row items-center justify-between gap-12">
                 <div className="flex-1 flex flex-col gap-6">
                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-1/10 border border-accent-1/20 w-fit">
                         <span className="text-xs font-semibold text-accent-1 uppercase tracking-wider">Premium Digital Agency</span>
                     </div>
-                    <h2 className="text-4xl md:text-6xl font-black leading-tight tracking-tight text-white">
+                    <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight text-white">
                         Dijital <span className="text-accent-1">Çözümlerimiz</span> ve Kreatif Yaklaşımlarımız
-                    </h2>
+                    </h1>
                     <p className="text-lg text-slate-400 max-w-xl">
                         Markanızın dijital dünyada parlaması için stratejik, estetik ve sonuç odaklı hizmetler sunuyoruz. Modern tasarım ve teknolojiyle markanızı geleceğe taşıyın.
                     </p>
@@ -136,6 +146,25 @@ export default function ServicesPage() {
                     </div>
                 </div>
             </section>
+
+            <FaqSection
+                title="Sıkça Sorulan Sorular"
+                className="rounded-2xl mt-8"
+                items={[
+                    {
+                        question: "Web projeleri ne kadar sürede tamamlanır?",
+                        answer: "Projenin kapsamına göre değişmekle birlikte, kurumsal bir web sitesi ortalama 2-4 hafta içerisinde yayına alınmaktadır."
+                    },
+                    {
+                        question: "Sosyal medya yönetimi neleri kapsar?",
+                        answer: "Kapak / profil tasarımları, içerik planlaması, aylık post/reels gönderimleri, moderasyon ve stratejik büyüme hedeflerini kapsamaktadır."
+                    },
+                    {
+                        question: "Sitenize sonradan özellik eklenebilir mi?",
+                        answer: "Evet, geliştirdiğimiz tüm sistemler modüler yapıdadır. İlerleyen süreçte dilediğiniz yeni modülleri kolayca entegre edebiliriz."
+                    }
+                ]}
+            />
         </main>
     );
 }
