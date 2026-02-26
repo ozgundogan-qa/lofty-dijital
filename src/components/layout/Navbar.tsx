@@ -35,7 +35,7 @@ export default function Navbar() {
                         onMouseEnter={() => setIsMegaMenuOpen(true)}
                         onMouseLeave={() => setIsMegaMenuOpen(false)}
                     >
-                        <Link href="/hizmetler" className="text-slate-300 hover:text-accent-1 text-sm font-medium transition-colors py-2">
+                        <Link href="/hizmetlerimiz" className="text-slate-300 hover:text-accent-1 text-sm font-medium transition-colors py-2">
                             Hizmetlerimiz
                         </Link>
 
@@ -50,7 +50,7 @@ export default function Navbar() {
                                     <div className="grid grid-cols-2 p-6 gap-6">
                                         <div className="flex flex-col gap-4">
                                             <h3 className="text-white font-bold opacity-50 text-xs tracking-wider uppercase">Temel Hizmetler</h3>
-                                            <Link href="/hizmetler" className="flex items-start gap-3 group">
+                                            <Link href="/hizmetlerimiz" className="flex items-start gap-3 group">
                                                 <div className="bg-accent-1/10 p-2 rounded-lg text-accent-1 group-hover:bg-accent-1 group-hover:text-background-dark transition-colors">
                                                     <ArrowRight className="w-5 h-5" />
                                                 </div>
@@ -59,7 +59,7 @@ export default function Navbar() {
                                                     <p className="text-slate-400 text-xs mt-1 text-wrap">Markanızın sesini sosyal medyada duyurun.</p>
                                                 </div>
                                             </Link>
-                                            <Link href="/hizmetler" className="flex items-start gap-3 group">
+                                            <Link href="/hizmetlerimiz" className="flex items-start gap-3 group">
                                                 <div className="bg-accent-1/10 p-2 rounded-lg text-accent-1 group-hover:bg-accent-1 group-hover:text-background-dark transition-colors">
                                                     <ArrowRight className="w-5 h-5" />
                                                 </div>
@@ -71,7 +71,7 @@ export default function Navbar() {
                                         </div>
                                         <div className="flex flex-col gap-4">
                                             <h3 className="text-white font-bold opacity-50 text-xs tracking-wider uppercase">Kreatif Çözümler</h3>
-                                            <Link href="/hizmetler" className="flex items-start gap-3 group">
+                                            <Link href="/hizmetlerimiz" className="flex items-start gap-3 group">
                                                 <div className="bg-accent-1/10 p-2 rounded-lg text-accent-1 group-hover:bg-accent-1 group-hover:text-background-dark transition-colors">
                                                     <ArrowRight className="w-5 h-5" />
                                                 </div>
@@ -80,7 +80,7 @@ export default function Navbar() {
                                                     <p className="text-slate-400 text-xs mt-1 text-wrap">Akılda kalıcı marka tasarımları.</p>
                                                 </div>
                                             </Link>
-                                            <Link href="/hizmetler" className="flex items-start gap-3 group">
+                                            <Link href="/hizmetlerimiz" className="flex items-start gap-3 group">
                                                 <div className="bg-accent-1/10 p-2 rounded-lg text-accent-1 group-hover:bg-accent-1 group-hover:text-background-dark transition-colors">
                                                     <ArrowRight className="w-5 h-5" />
                                                 </div>
@@ -93,7 +93,7 @@ export default function Navbar() {
                                     </div>
                                     <div className="bg-white/5 p-4 flex justify-between items-center text-sm">
                                         <span className="text-slate-300">Tüm hizmetleri keşfetmek ister misiniz?</span>
-                                        <Link href="/hizmetler" className="text-accent-1 font-bold hover:underline">Hizmetlere Git</Link>
+                                        <Link href="/hizmetlerimiz" className="text-accent-1 font-bold hover:underline">Hizmetlere Git</Link>
                                     </div>
                                 </motion.div>
                             )}
@@ -143,17 +143,17 @@ export default function Navbar() {
 
                             <div className="flex flex-col gap-4">
                                 <Link
-                                    href="/hizmetler"
+                                    href="/hizmetlerimiz"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                     className="text-white text-lg font-medium hover:text-accent-1 transition-colors"
                                 >
                                     Hizmetlerimiz
                                 </Link>
                                 <div className="pl-4 ml-2 border-l-2 border-white/10 flex flex-col gap-4">
-                                    <Link href="/hizmetler" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white transition-colors">Sosyal Medya Yönetimi</Link>
-                                    <Link href="/hizmetler" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white transition-colors">Web Tasarım & Yazılım</Link>
-                                    <Link href="/hizmetler" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white transition-colors">Kurumsal Kimlik</Link>
-                                    <Link href="/hizmetler" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white transition-colors">Kreatif Video Edit</Link>
+                                    <Link href="/hizmetlerimiz" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white transition-colors">Sosyal Medya Yönetimi</Link>
+                                    <Link href="/hizmetlerimiz" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white transition-colors">Web Tasarım & Yazılım</Link>
+                                    <Link href="/hizmetlerimiz" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white transition-colors">Kurumsal Kimlik</Link>
+                                    <Link href="/hizmetlerimiz" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white transition-colors">Kreatif Video Edit</Link>
                                 </div>
                             </div>
 

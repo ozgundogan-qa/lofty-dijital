@@ -31,9 +31,9 @@ export default function Footer() {
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 lg:gap-16">
                         <div className="flex flex-col gap-4">
                             <h4 className="text-white font-bold">Hizmetler</h4>
-                            <Link className="text-slate-400 text-sm hover:text-accent-1 transition-colors" href="/hizmetler">Web Tasarım</Link>
-                            <Link className="text-slate-400 text-sm hover:text-accent-1 transition-colors" href="/hizmetler">Sosyal Medya</Link>
-                            <Link className="text-slate-400 text-sm hover:text-accent-1 transition-colors" href="/hizmetler">SEO & SEM</Link>
+                            <Link className="text-slate-400 text-sm hover:text-accent-1 transition-colors" href="/hizmetlerimiz">Web Tasarım</Link>
+                            <Link className="text-slate-400 text-sm hover:text-accent-1 transition-colors" href="/hizmetlerimiz">Sosyal Medya</Link>
+                            <Link className="text-slate-400 text-sm hover:text-accent-1 transition-colors" href="/hizmetlerimiz">SEO & SEM</Link>
                             <Link className="text-slate-400 text-sm hover:text-accent-1 transition-colors" href="/marka-kiti">Marka Kimliği</Link>
                         </div>
 
