@@ -57,8 +57,8 @@ export default function Footer() {
                 <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-slate-500 text-xs">© 2026 Lofty Dijital. Tüm hakları saklıdır.</p>
                     <div className="flex gap-6">
-                        <Link className="text-slate-500 text-xs hover:text-accent-1 transition-colors" href="#">Gizlilik Politikası</Link>
-                        <Link className="text-slate-500 text-xs hover:text-accent-1 transition-colors" href="#">Kullanım Şartları</Link>
+                        <Link className="text-slate-500 text-xs hover:text-accent-1 transition-colors" href="/gizlilik-politikasi">Gizlilik Politikası</Link>
+                        <Link className="text-slate-500 text-xs hover:text-accent-1 transition-colors" href="/kullanim-sartlari">Kullanım Şartları</Link>
                     </div>
                 </div>
             </div>
