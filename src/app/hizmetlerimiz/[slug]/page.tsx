@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowLeft, CheckCircle2, MessageSquare, ArrowRight } from "lucide-react";
 import { JsonLd } from "@/components/geo/JsonLd";
 import { AuthorMeta } from "@/components/geo/AuthorMeta";
+import { TARGET_CITIES } from "@/constants/seoBlogData";
 
 export function generateStaticParams() {
     return featuredServices.map((service) => ({
@@ -139,6 +140,22 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                                 <MessageSquare className="w-5 h-5" />
                                 <span>Bize Ulaşın</span>
                             </Link>
+                        </div>
+
+                        {/* Subtle SEO Regional Links */}
+                        <div className="mt-4 px-4">
+                            <p className="text-[11px] text-slate-500 mb-2 uppercase tracking-wider font-semibold">Bölgesel Hizmetlerimiz</p>
+                            <div className="flex flex-wrap gap-x-3 gap-y-1">
+                                {TARGET_CITIES.map((city) => (
+                                    <Link
+                                        key={city.slug}
+                                        href={`/blog/${city.slug}/${service.slug}`}
+                                        className="text-xs text-slate-600 hover:text-accent-1 transition-colors"
+                                    >
+                                        {city.name} {service.title}
+                                    </Link>
+                                ))}
+                            </div>
                         </div>
 
                     </div>

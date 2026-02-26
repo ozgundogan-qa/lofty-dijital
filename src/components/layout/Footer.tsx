@@ -41,7 +41,7 @@ export default function Footer() {
                             <h4 className="text-white font-bold">Kurumsal</h4>
                             <Link className="text-slate-400 text-sm hover:text-accent-1 transition-colors" href="/hakkimizda">Hakkımızda</Link>
                             <Link className="text-slate-400 text-sm hover:text-accent-1 transition-colors" href="/sektorler">Sektörler</Link>
-                            <Link className="text-slate-400 text-sm hover:text-accent-1 transition-colors" href="#">Kariyer</Link>
+                            <Link className="text-slate-400 text-sm hover:text-accent-1 transition-colors" href="/blog">Blog</Link>
                             <Link className="text-slate-400 text-sm hover:text-accent-1 transition-colors" href="/iletisim">İletişim</Link>
                         </div>
 
