@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MoveDown, ArrowRight, Share2, Monitor, Video, Camera, TrendingUp } from "lucide-react";
+import { featuredServices, iconMap } from "@/constants/featuredServices";
 
 export default function ServicesPage() {
     return (
@@ -48,48 +49,32 @@ export default function ServicesPage() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {[
-                        {
-                            title: "Sosyal Medya Yönetimi",
-                            desc: "Marka bilinirliğinizi artıran, etkileşim odaklı içerik stratejileri ve topluluk yönetimi. Hedef kitlenizle bağ kurun.",
-                            img: "AB6AXuCV7JluOSzrb_kEEkIcmphwrdf-zTAMD9d24Nuo9QFuvKqtPIshWCUwVd1Vffen6jrWpURo7NgmczgfsSfbTUMd6aOxzNO4SvsIih6ja2bGJ8tEIw3iYkNIixDiF1aQhNqDnZw2TV6gCi8ZV6LFvlSDXPetv21iPNwNBjgtgjYKcUkvPiyhzOU1V5GVbnnhv9eTi0A61mgBn5lcXwB29Ygp8trdnNlHG131YNTZ8Gri9S6pPXM2Dpr5FryM-TBUEudtOba-GBL4eI4",
-                            icon: Share2
-                        },
-                        {
-                            title: "Web Tasarım & Geliştirme",
-                            desc: "Modern, hızlı ve tüm cihazlarla uyumlu, dönüşüm odaklı web siteleri. Kullanıcı deneyimini (UX) ön planda tutan tasarımlar.",
-                            img: "AB6AXuBHP2H8dYzZetQfCfeK31BeDv5k4vpyfnQaC09XYJsqhTeIa7Febp3lSWTYw09NLqOR_BuL20i2R-fHklCZAAf40zjJwzzOj343reBoCGeQV35S-jC95g4MsOJ2ZYKzswi8uW5rXgfsEUBC1jaZDlqroRurSvIX76X5WiPTuj3H-dcJebBeTqIswOM8zNxoxKODGfiQwOB6MPSucP3SS6wXJ8V1VEa4x43RnUYUlehCtX146H3k-7r89UW0Tek4EgtM5WyzqSJ_YfU",
-                            icon: Monitor
-                        },
-                        {
-                            title: "Kreatif Video Edit",
-                            desc: "Hikayenizi en etkileyici şekilde anlatan profesyonel video kurgu ve post-prodüksiyon hizmetleri. Reels ve YouTube içerikleri.",
-                            img: "AB6AXuCyM94B115pRJcVXHV1s6jCb2Xbvyt57GyhIngsE6R6o8RWd5sfCvBgVIeWv72nBph5TvtKrFYBMDVYTeaA8-wODOfXPtyHJ-FOt47XcE7r3r7hjDHvg7L6xRAKZP5YLnOUc2SAlE1D8OEh3Qkh1i4Zp9gCeUSG7rJx3YcEqeQatYVKveJMsxBtfX8xcGmkaH19Ccj8xXRTT4de_LJz3QOYHrbMk163xr-9RhKsu3c277T4uNgbtK9G7MQ_jX8LkIzxmaEaWqeQf_8",
-                            icon: Video
-                        }
-                    ].map((service, i) => (
-                        <div key={i} className="group relative bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:shadow-accent-1/10 transition-all duration-300 border border-white/10 cursor-pointer">
-                            <div className="h-48 overflow-hidden relative">
-                                <div className="absolute inset-0 bg-accent-1/20 group-hover:bg-accent-1/10 transition-colors z-10"></div>
-                                <div
-                                    className="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                                    style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/${service.img}')` }}
-                                ></div>
-                            </div>
-                            <div className="p-6 flex flex-col gap-3">
-                                <div className="size-10 rounded-lg bg-accent-1/10 flex items-center justify-center text-accent-1 mb-2">
-                                    <service.icon className="w-5 h-5" />
+                    {featuredServices.map((service, i) => {
+                        const Icon = iconMap[service.icon];
+                        return (
+                            <Link href={`/hizmetlerimiz/${service.slug}`} key={service.slug} className="group relative bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:shadow-accent-1/10 transition-all duration-300 border border-white/10 cursor-pointer block">
+                                <div className="h-48 overflow-hidden relative">
+                                    <div className="absolute inset-0 bg-accent-1/20 group-hover:bg-accent-1/10 transition-colors z-10"></div>
+                                    <div
+                                        className="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                                        style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/${service.img}')` }}
+                                    ></div>
                                 </div>
-                                <h4 className="text-xl font-bold text-white group-hover:text-accent-1 transition-colors">{service.title}</h4>
-                                <p className="text-slate-400 text-sm leading-relaxed">
-                                    {service.desc}
-                                </p>
-                                <div className="mt-2 inline-flex items-center text-sm font-semibold text-accent-1">
-                                    Detayları İncele <ArrowRight className="w-4 h-4 ml-1" />
+                                <div className="p-6 flex flex-col gap-3">
+                                    <div className="size-10 rounded-lg bg-accent-1/10 flex items-center justify-center text-accent-1 mb-2">
+                                        {Icon && <Icon className="w-5 h-5" />}
+                                    </div>
+                                    <h4 className="text-xl font-bold text-white group-hover:text-accent-1 transition-colors">{service.title}</h4>
+                                    <p className="text-slate-400 text-sm leading-relaxed">
+                                        {service.desc}
+                                    </p>
+                                    <div className="mt-2 inline-flex items-center text-sm font-semibold text-accent-1">
+                                        Detayları İncele <ArrowRight className="w-4 h-4 ml-1" />
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    ))}
+                            </Link>
+                        );
+                    })}
                 </div>
             </section>
 
