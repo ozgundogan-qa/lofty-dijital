@@ -146,8 +146,8 @@ export default function ServicesPage() {
                         <p className="font-medium opacity-80">Projeniz için hemen teklif alın.</p>
                     </div>
                     <div className="relative z-10 mt-8 pt-6 border-t border-background-dark/20 flex flex-col gap-2">
-                        <p className="font-bold">hello@loftydijital.com</p>
-                        <p className="font-bold">+90 212 123 45 67</p>
+                        <p className="font-bold">loftydijital@gmail.com</p>
+                        <p className="font-bold">+90 533 543 98 90</p>
                     </div>
                 </div>
             </section>

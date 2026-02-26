@@ -67,7 +67,7 @@ export default function ContactPage() {
                         {/* WhatsApp (Primary) */}
                         <motion.a
                             variants={fadeUp}
-                            href="https://wa.me/905335439890" // Replace with real number
+                            href="https://wa.me/905335439890"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group relative col-span-1 md:col-span-2 lg:col-span-2 flex flex-col justify-between p-8 rounded-3xl bg-surface-dark border border-accent-1/30 hover:border-accent-1 shadow-lg shadow-accent-1/5 overflow-hidden cursor-pointer transition-all duration-500 hover:-translate-y-2"

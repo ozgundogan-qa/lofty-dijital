@@ -48,7 +48,7 @@ export default function Footer() {
                         <div className="flex flex-col gap-4 col-span-2 sm:col-span-1">
                             <h4 className="text-white font-bold">Bize Ulaşın</h4>
                             <p className="text-slate-400 text-sm">loftydijital@gmail.com</p>
-                            <p className="text-slate-400 text-sm">+90 (533) 543 98 90</p>
+                            <p className="text-slate-400 text-sm">+90 533 543 98 90</p>
                             <p className="text-slate-400 text-sm">Çankaya, Ankara</p>
                         </div>
                     </div>
