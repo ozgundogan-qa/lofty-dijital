@@ -11,7 +11,7 @@ export default function BrandKitPage() {
                     <div className="max-w-2xl">
                         <h2 className="text-5xl md:text-6xl font-black leading-tight tracking-tight mb-6 text-white">Marka Kimliği</h2>
                         <p className="text-slate-400 text-lg md:text-xl font-normal leading-relaxed max-w-xl">
-                            Lofty Dijital'in görsel DNA'sını keşfedin. Tutarlılık ve estetik bütünlük için oluşturulmuş kurumsal tasarım sistemimiz.
+                            Lofty Dijital&apos;in görsel DNA&apos;sını keşfedin. Tutarlılık ve estetik bütünlük için oluşturulmuş kurumsal tasarım sistemimiz.
                         </p>
                     </div>
                     <button className="flex items-center gap-2 border border-slate-700 hover:border-accent-1 hover:text-accent-1 text-slate-300 px-5 py-3 rounded-lg transition-all">
@@ -33,10 +33,12 @@ export default function BrandKitPage() {
                         <div className="group flex flex-col gap-4">
                             <div className="w-full bg-surface-dark border border-white/5 rounded-xl aspect-[4/3] flex items-center justify-center p-8 relative overflow-hidden group-hover:border-accent-1/50 transition-all duration-300">
                                 <div className="absolute inset-0 opacity-5 bg-[radial-gradient(#c18671_1px,transparent_1px)] [background-size:16px_16px]"></div>
-                                <img
+                                <Image
                                     alt="Ana Logo"
                                     className="w-3/4 h-auto object-contain relative z-10"
                                     src="/logos/dikey-logo.png"
+                                    width={400}
+                                    height={400}
                                 />
                             </div>
                             <div>
@@ -47,10 +49,12 @@ export default function BrandKitPage() {
 
                         <div className="group flex flex-col gap-4">
                             <div className="w-full bg-background-light text-background-dark rounded-xl aspect-[4/3] flex items-center justify-center p-8 relative overflow-hidden group-hover:shadow-[0_0_30px_-5px_rgba(193,134,113,0.2)] transition-all duration-300">
-                                <img
+                                <Image
                                     alt="Monogram"
                                     className="h-24 w-24 object-contain relative z-10"
                                     src="/logo.png"
+                                    width={96}
+                                    height={96}
                                 />
                             </div>
                             <div>
@@ -62,10 +66,12 @@ export default function BrandKitPage() {
                         <div className="group flex flex-col gap-4">
                             <div className="w-full bg-surface-dark border border-white/5 rounded-xl aspect-[4/3] flex items-center justify-center p-8 relative overflow-hidden group-hover:border-accent-1/50 transition-all duration-300">
                                 <div className="absolute inset-0 opacity-10 bg-[linear-gradient(45deg,transparent_25%,rgba(193,134,113,0.1)_50%,transparent_75%,transparent_100%)]"></div>
-                                <img
+                                <Image
                                     alt="Yatay Logo"
                                     className="w-4/5 h-auto object-contain relative z-10 opacity-90"
                                     src="/logos/yatay-web.png"
+                                    width={400}
+                                    height={200}
                                 />
                             </div>
                             <div>

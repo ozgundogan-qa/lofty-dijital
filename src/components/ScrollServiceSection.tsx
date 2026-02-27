@@ -81,7 +81,7 @@ export default function ScrollServiceSection({ service, index }: ScrollServiceSe
                             </h2>
                             <div className="h-1 w-24 bg-gradient-to-r from-accent-1 to-transparent rounded-full" />
                             <p className="text-xl md:text-2xl text-muted-foreground font-playfair italic">
-                                "{service.motto}"
+                                &quot;{service.motto}&quot;
                             </p>
                         </div>
 

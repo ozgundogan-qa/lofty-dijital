@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
-import clsx from "clsx";
+import AnimatedNavbarLogo from "@/components/ui/AnimatedNavbarLogo";
 
 export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ export default function Navbar() {
             <div className="flex items-center gap-4">
                 <Link href="/" className="flex items-center gap-3 group">
                     <div className="flex items-center justify-center group-hover:scale-105 transition-transform">
-                        <Image src="/logo.png" alt="Lofty Dijital Logo" width={40} height={40} className="object-contain" priority />
+                        <AnimatedNavbarLogo width={120} height={60} />
                     </div>
                     <h2 className="text-white text-xl font-bold leading-tight tracking-tight mt-1">
                         Lofty Dijital

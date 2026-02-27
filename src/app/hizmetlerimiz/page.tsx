@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MoveDown, ArrowRight, Share2, Monitor, Video, Camera, TrendingUp } from "lucide-react";
+import { MoveDown, ArrowRight, Camera, TrendingUp } from "lucide-react";
 import { featuredServices, iconMap } from "@/constants/featuredServices";
 import { JsonLd } from "@/components/geo/JsonLd";
 import { FaqSection } from "@/components/geo/FaqSection";
@@ -59,7 +59,7 @@ export default function ServicesPage() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {featuredServices.map((service, i) => {
+                    {featuredServices.map((service) => {
                         const Icon = iconMap[service.icon];
                         return (
                             <Link href={`/hizmetlerimiz/${service.slug}`} key={service.slug} className="group relative bg-surface-dark rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:shadow-accent-1/10 transition-all duration-300 border border-white/10 cursor-pointer block">

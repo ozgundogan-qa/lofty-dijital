@@ -31,7 +31,7 @@ export default function GizlilikPolitikasiPage() {
             <section className="py-16 px-6 max-w-4xl mx-auto">
                 <div className="prose prose-invert prose-slate max-w-none">
                     <p className="lead text-xl text-slate-300 mb-8">
-                        Lofty Dijital olarak, iletişim formlarımız, web sitemiz ve hizmetlerimiz aracılığıyla bizimle paylaştığınız kişisel verilerinizin gizliliğine saygı duyuyoruz. 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") ve ilgili mevzuat uyarınca Veri Sorumlusu sıfatıyla sizi bilgilendirmek istiyoruz.
+                        Lofty Dijital olarak, iletişim formlarımız, web sitemiz ve hizmetlerimiz aracılığıyla bizimle paylaştığınız kişisel verilerinizin gizliliğine saygı duyuyoruz. 6698 sayılı Kişisel Verilerin Korunması Kanunu (&quot;KVKK&quot;) ve ilgili mevzuat uyarınca Veri Sorumlusu sıfatıyla sizi bilgilendirmek istiyoruz.
                     </p>
 
                     <h2 className="text-2xl font-bold text-white mt-12 mb-6 flex items-center gap-3">
@@ -54,7 +54,7 @@ export default function GizlilikPolitikasiPage() {
                         <span className="text-accent-1">2.</span> Kişisel Verilerin Aktarılması
                     </h2>
                     <p className="text-slate-400 mb-8">
-                        Kişisel verileriniz, kural olarak üçüncü kişilerle paylaşılmamaktadır. Ancak; yasal zorunluluklar kapsamında yetkili kamu kurumlarıyla veya hizmet kalitemizi artırmak amacıyla (sunucu barındırma, altyapı hizmetleri vb.) yurt içi veya yurt dışındaki güvenilir iş ortaklarımız ve hizmet sağlayıcılarımızla, KVKK'nın 8. ve 9. maddelerine uygun olarak, gerekli güvenlik önlemleri alınarak paylaşılabilir.
+                        Kişisel verileriniz, kural olarak üçüncü kişilerle paylaşılmamaktadır. Ancak; yasal zorunluluklar kapsamında yetkili kamu kurumlarıyla veya hizmet kalitemizi artırmak amacıyla (sunucu barındırma, altyapı hizmetleri vb.) yurt içi veya yurt dışındaki güvenilir iş ortaklarımız ve hizmet sağlayıcılarımızla, KVKK&apos;nın 8. ve 9. maddelerine uygun olarak, gerekli güvenlik önlemleri alınarak paylaşılabilir.
                     </p>
 
                     <h2 className="text-2xl font-bold text-white mt-12 mb-6 flex items-center gap-3">
@@ -68,7 +68,7 @@ export default function GizlilikPolitikasiPage() {
                         <span className="text-accent-1">4.</span> KVKK Kapsamında Haklarınız
                     </h2>
                     <p className="text-slate-400 mb-4">
-                        KVKK'nın 11. maddesi uyarınca, veri sahibi olarak aşağıdaki haklara sahipsiniz:
+                        KVKK&apos;nın 11. maddesi uyarınca, veri sahibi olarak aşağıdaki haklara sahipsiniz:
                     </p>
                     <ul className="list-disc pl-6 text-slate-400 space-y-2 mb-8 marker:text-accent-1">
                         <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme,</li>
@@ -76,7 +76,7 @@ export default function GizlilikPolitikasiPage() {
                         <li>İşlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme,</li>
                         <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme,</li>
                         <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme,</li>
-                        <li>KVKK'da öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme,</li>
+                        <li>KVKK&apos;da öngörülen şartlar çerçevesinde silinmesini veya yok edilmesini isteme,</li>
                         <li>İşlenen verilerin münhasıran otomatik sistemler vasıtasıyla analiz edilmesi suretiyle aleyhinize bir sonucun ortaya çıkmasına itiraz etme,</li>
                         <li>Kanuna aykırı olarak işlenmesi sebebiyle zarara uğramanız hâlinde zararın giderilmesini talep etme.</li>
                     </ul>

@@ -2,7 +2,6 @@
 
 import { motion, Variants } from "framer-motion";
 import { MessageCircle, Mail, Instagram, Linkedin, ArrowRight } from "lucide-react";
-import AnimatedButton from "@/components/ui/AnimatedButton";
 
 const staggerContainer: Variants = {
     hidden: { opacity: 0 },

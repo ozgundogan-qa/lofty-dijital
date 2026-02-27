@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Instagram, Linkedin, Twitter } from "lucide-react";
+import AnimatedNavbarLogo from "@/components/ui/AnimatedNavbarLogo";
 
 export default function Footer() {
     return (
@@ -8,8 +8,11 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-6 flex flex-col gap-12">
                 <div className="flex flex-col lg:flex-row justify-between gap-12">
                     <div className="flex flex-col gap-6 max-w-sm">
-                        <div className="flex items-center gap-3 text-white">
-                            <Image src="/logo.png" alt="Lofty Dijital Logo" width={40} height={40} className="object-contain" />
+                        {/* Logo and About */}
+                        <div className="space-y-6">
+                            <Link href="/" className="inline-block">
+                                <AnimatedNavbarLogo width={160} height={80} />
+                            </Link>
                             <h3 className="text-xl font-bold mt-1">Lofty Dijital</h3>
                         </div>
                         <p className="text-slate-400 text-sm leading-relaxed">

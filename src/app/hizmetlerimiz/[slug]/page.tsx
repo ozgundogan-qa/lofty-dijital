@@ -1,7 +1,7 @@
 import { featuredServices, iconMap } from "@/constants/featuredServices";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { ArrowLeft, CheckCircle2, MessageSquare, ArrowRight } from "lucide-react";
+import { ArrowLeft, CheckCircle2, MessageSquare } from "lucide-react";
 import { JsonLd } from "@/components/geo/JsonLd";
 import { AuthorMeta } from "@/components/geo/AuthorMeta";
 import { TARGET_CITIES } from "@/constants/seoBlogData";

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { CheckCircle2, HeartHandshake, Eye, Target } from "lucide-react";
 
 export default function HakkimizdaPage() {
@@ -28,7 +27,7 @@ export default function HakkimizdaPage() {
               Biz, tasarıma tutkuyla bağlı, koda hayat veren ve stratejiyle büyüyen yaratıcı bir ekibiz. Kurulduğumuz günden bu yana, iş ortaklarımızın dijital potansiyellerini en üst düzeye çıkarmak için çalışıyoruz.
             </p>
             <p className="text-slate-400 leading-relaxed">
-              Her markanın kendine özgü bir hikayesi olduğuna inanıyoruz. Bizim görevimiz, bu hikayeyi en doğru araçlarla, en estetik biçimde dijital dünyaya taşımak. Hazır şablonlardan, sıradanlıktan uzak; "Minimalist Luxury" anlayışımızla markanıza vizyon katıyoruz.
+              Her markanın kendine özgü bir hikayesi olduğuna inanıyoruz. Bizim görevimiz, bu hikayeyi en doğru araçlarla, en estetik biçimde dijital dünyaya taşımak. Hazır şablonlardan, sıradanlıktan uzak; &quot;Minimalist Luxury&quot; anlayışımızla markanıza vizyon katıyoruz.
             </p>
           </div>
           <div className="relative aspect-square md:aspect-video lg:aspect-square rounded-2xl overflow-hidden shadow-2xl border border-white/10">
@@ -60,7 +59,7 @@ export default function HakkimizdaPage() {
             </div>
             <h3 className="text-2xl font-bold text-white">Vizyonumuz</h3>
             <p className="text-slate-400 leading-relaxed">
-              Dijital dünyadaki hızlı dönüşüme öncülük eden, yenilikçi yaklaşımları belirleyen ve "Premium Dijital Ajans" denildiğinde akla ilk gelen global ölçekli kreatif güç olmak.
+              Dijital dünyadaki hızlı dönüşüme öncülük eden, yenilikçi yaklaşımları belirleyen ve &quot;Premium Dijital Ajans&quot; denildiğinde akla ilk gelen global ölçekli kreatif güç olmak.
             </p>
           </div>
         </div>

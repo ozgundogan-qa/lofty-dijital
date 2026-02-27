@@ -17,7 +17,7 @@ export default function BlogIndexPage() {
                         Blog ve Hizmet Bölgelerimiz
                     </h1>
                     <p className="text-lg text-slate-300 max-w-2xl">
-                        Türkiye'nin dört bir yanındaki işletmeler için ürettiğimiz profesyonel dijital çözümleri ve sektörel içgörüleri keşfedin.
+                        Türkiye&apos;nin dört bir yanındaki işletmeler için ürettiğimiz profesyonel dijital çözümleri ve sektörel içgörüleri keşfedin.
                     </p>
                 </div>
 

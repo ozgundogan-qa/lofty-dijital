@@ -2,9 +2,9 @@
 
 import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { Smile, CheckCircle2, Hourglass, ArrowRight, PlayCircle, Sparkles, Rocket, Headset } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
 import AnimatedButton from "@/components/ui/AnimatedButton";
+import AnimatedLogo from "@/components/ui/AnimatedLogo";
 import { useRef } from "react";
 
 const staggerContainer: Variants = {
@@ -259,14 +259,8 @@ export default function Home() {
           variants={staggerContainer}
           className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
         >
-          <motion.div variants={fadeUp} className="relative rounded-2xl overflow-hidden aspect-square lg:aspect-auto lg:h-[600px] shadow-2xl">
-            <Image
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_mV_35bwJ7_7VUWKHtHD0WfAOYAhwyyogT9SwXfIms-trw_rY8klNlvxP4hs3cn79M78O8KQhWmodwQbQUNVUIDrllrjVYmZNtQqIukk4PdXRHxTsOOOsyW7B-cPk-eL7hWHm6Rdg4Z-jgHhZyVdFgpM65iO7Zrfl_DIWNz2HaT5gH_psvobV6w8_i5o0RelmoPzg3pqUEjLnFLoIaEjMjL8QYdfPc360vKmhKf-Rh-TxvLrj-yscJ9Q6ldT-n4-tro1Z_drMUmg"
-              alt="Lofty Dijital Çalışma Ortamı ve Tasarım Vizyonu"
-              fill
-              className="object-cover object-center hover:scale-105 transition-transform duration-1000 ease-[0.22,1,0.36,1]"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+          <motion.div variants={fadeUp} className="relative rounded-2xl overflow-hidden aspect-square lg:aspect-auto lg:h-[600px] shadow-2xl flex items-center justify-center bg-background-dark border border-white/5 group">
+            <AnimatedLogo width="80%" height="80%" className="group-hover:scale-105 transition-transform duration-1000 ease-[0.22,1,0.36,1]" />
             <div className="absolute inset-0 bg-accent-1/20 mix-blend-multiply pointer-events-none"></div>
           </motion.div>
 
