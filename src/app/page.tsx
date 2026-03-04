@@ -3,6 +3,7 @@
 import { motion, useScroll, useTransform, Variants } from "framer-motion";
 import { Smile, CheckCircle2, Hourglass, ArrowRight, PlayCircle, Sparkles, Rocket, Headset } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import AnimatedButton from "@/components/ui/AnimatedButton";
 import AnimatedLogo from "@/components/ui/AnimatedLogo";
 import { useRef } from "react";
@@ -203,47 +204,52 @@ export default function Home() {
               {
                 title: "Sosyal Medya Yönetimi",
                 desc: "Stratejik içerik planlaması ve yönetimi ile markanızın sesini sosyal medyada en etkili şekilde duyuruyoruz.",
-                img: "photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop"
+                img: "photo-1611162617474-5b21e879e113?q=80&w=800&auto=format&fit=crop",
+                href: "/hizmetlerimiz/sosyal-medya-yonetimi"
               },
               {
                 title: "Web Tasarım & Yazılım",
                 desc: "Kullanıcı deneyimini ön planda tutan, estetik, hızlı ve işlevsel web siteleri tasarlıyoruz.",
-                img: "photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop"
+                img: "photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop",
+                href: "/hizmetlerimiz/web-tasarim-ve-gelistirme"
               },
               {
                 title: "Kurumsal Kimlik",
                 desc: "Markanızın özünü yansıtan, akılda kalıcı ve bütünsel kurumsal kimlik çalışmaları.",
-                img: "photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop"
+                img: "photo-1600880292203-757bb62b4baf?q=80&w=800&auto=format&fit=crop",
+                href: "/hizmetlerimiz"
               }
             ].map((service, index) => (
               <motion.div
                 variants={fadeUp}
                 key={index}
                 whileHover="hover"
-                className="group flex flex-col gap-4 bg-surface-dark rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:shadow-accent-1/5 transition-shadow duration-300 border border-white/5 cursor-pointer"
+                className="group bg-surface-dark rounded-2xl shadow-sm hover:shadow-xl hover:shadow-accent-1/5 transition-shadow duration-300 border border-white/5 cursor-pointer h-full"
               >
-                <motion.div
-                  className="h-64 w-full block relative"
-                  variants={{ show: { scale: 1 }, hover: { scale: 1.05 } }}
-                  transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-                >
-                  <Image
-                    src={`https://images.unsplash.com/${service.img}`}
-                    alt={`${service.title} - Lofty Dijital`}
-                    fill
-                    className="object-cover object-center"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </motion.div>
-                <div className="p-6 pt-2 flex flex-col gap-2">
-                  <div className="flex justify-between items-center">
-                    <h3 className="text-white text-xl font-bold">{service.title}</h3>
-                    <motion.div variants={{ show: { x: 0 }, hover: { x: 4 } }} transition={{ duration: 0.3 }}>
-                      <ArrowRight className="text-accent-1 w-5 h-5" />
-                    </motion.div>
+                <Link href={service.href} className="flex flex-col gap-4 overflow-hidden rounded-2xl h-full w-full">
+                  <motion.div
+                    className="h-64 w-full block relative"
+                    variants={{ show: { scale: 1 }, hover: { scale: 1.05 } }}
+                    transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                  >
+                    <Image
+                      src={`https://images.unsplash.com/${service.img}`}
+                      alt={`${service.title} - Lofty Dijital`}
+                      fill
+                      className="object-cover object-center"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </motion.div>
+                  <div className="p-6 pt-2 flex flex-col gap-2 flex-grow">
+                    <div className="flex justify-between items-center">
+                      <h3 className="text-white text-xl font-bold">{service.title}</h3>
+                      <motion.div variants={{ show: { x: 0 }, hover: { x: 4 } }} transition={{ duration: 0.3 }}>
+                        <ArrowRight className="text-accent-1 w-5 h-5" />
+                      </motion.div>
+                    </div>
+                    <p className="text-slate-400 text-sm leading-relaxed">{service.desc}</p>
                   </div>
-                  <p className="text-slate-400 text-sm leading-relaxed">{service.desc}</p>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </motion.div>

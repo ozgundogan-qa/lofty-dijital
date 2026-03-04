@@ -36,13 +36,13 @@ export default function BrandKitPage() {
                                 <Image
                                     alt="Ana Logo"
                                     className="w-3/4 h-auto object-contain relative z-10"
-                                    src="/logos/dikey-logo.png"
+                                    src="/logos/ana-logo.png"
                                     width={400}
                                     height={400}
                                 />
                             </div>
                             <div>
-                                <h4 className="text-lg font-bold text-white">Dikey Logo</h4>
+                                <h4 className="text-lg font-bold text-white">Ana Logo</h4>
                                 <p className="text-slate-400 text-sm mt-1">Koyu zeminler için öncelikli kullanım. Kurumsal kimliğin temel taşı.</p>
                             </div>
                         </div>
@@ -50,15 +50,15 @@ export default function BrandKitPage() {
                         <div className="group flex flex-col gap-4">
                             <div className="w-full bg-background-light text-background-dark rounded-xl aspect-[4/3] flex items-center justify-center p-8 relative overflow-hidden group-hover:shadow-[0_0_30px_-5px_rgba(193,134,113,0.2)] transition-all duration-300">
                                 <Image
-                                    alt="Monogram"
-                                    className="h-24 w-24 object-contain relative z-10"
-                                    src="/logo.png"
-                                    width={96}
-                                    height={96}
+                                    alt="Zıt Renk Logo"
+                                    className="w-3/4 h-auto object-contain relative z-10"
+                                    src="/logos/zit-renk.png"
+                                    width={400}
+                                    height={400}
                                 />
                             </div>
                             <div>
-                                <h4 className="text-lg font-bold text-white">Monogram</h4>
+                                <h4 className="text-lg font-bold text-white">Zıt Renk Logo</h4>
                                 <p className="text-slate-400 text-sm mt-1">Sosyal medya avatarları, favicon ve dar alanlar için simge kullanımı.</p>
                             </div>
                         </div>
@@ -69,13 +69,13 @@ export default function BrandKitPage() {
                                 <Image
                                     alt="Yatay Logo"
                                     className="w-4/5 h-auto object-contain relative z-10 opacity-90"
-                                    src="/logos/yatay-web.png"
+                                    src="/logos/renkli-logo.png"
                                     width={400}
                                     height={200}
                                 />
                             </div>
                             <div>
-                                <h4 className="text-lg font-bold text-white">Yatay Logo (Renkli)</h4>
+                                <h4 className="text-lg font-bold text-white">Renkli Logo</h4>
                                 <p className="text-slate-400 text-sm mt-1">Renkli veya karmaşık zeminler için tek renk beyaz kullanım.</p>
                             </div>
                         </div>
