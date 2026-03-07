@@ -6,6 +6,8 @@ import { JsonLd } from "@/components/geo/JsonLd";
 import { AuthorMeta } from "@/components/geo/AuthorMeta";
 import { TARGET_CITIES } from "@/constants/seoBlogData";
 
+export const revalidate = 86400; // 24 hours
+
 export function generateStaticParams() {
     return featuredServices.map((service) => ({
         slug: service.slug,
@@ -77,7 +79,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                         <AuthorMeta
                             authorName="Lofty Ekibi"
                             datePublished="2024-01-15T08:00:00+03:00"
-                            dateModified="2024-02-20T08:00:00+03:00"
+                            dateModified={new Date().toISOString()}
                             articleTitle={service.title}
                             articleDescription={service.desc}
                             articleUrl={`https://www.loftydijital.com/hizmetlerimiz/${slug}`}
