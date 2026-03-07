@@ -43,7 +43,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                     <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-background-dark/30 z-10"></div>
                     <div
                         className="w-full h-full bg-cover bg-center"
-                        style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/${service.heroImage}')` }}
+                        style={{ backgroundImage: `url('${service.heroImage}')` }}
                     ></div>
                 </div>
 

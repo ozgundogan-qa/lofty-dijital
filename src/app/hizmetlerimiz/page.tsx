@@ -67,7 +67,7 @@ export default function ServicesPage() {
                                     <div className="absolute inset-0 bg-accent-1/20 group-hover:bg-accent-1/10 transition-colors z-10"></div>
                                     <div
                                         className="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-                                        style={{ backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/${service.img}')` }}
+                                        style={{ backgroundImage: `url('${service.img}')` }}
                                     ></div>
                                 </div>
                                 <div className="p-6 flex flex-col gap-3">
