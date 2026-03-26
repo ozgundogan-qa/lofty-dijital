@@ -1,11 +1,16 @@
 "use client";
 
 import Link from "next/link";
-
+import dynamic from "next/dynamic";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
-import AnimatedNavbarLogo from "@/components/ui/AnimatedNavbarLogo";
+
+// Lazy-load the animated logo so anime.js stays out of the initial bundle
+const AnimatedNavbarLogo = dynamic(() => import("@/components/ui/AnimatedNavbarLogo"), {
+  ssr: false,
+  loading: () => <div className="w-[120px] h-[60px] animate-pulse rounded bg-white/5" />,
+});
 
 export default function Navbar() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

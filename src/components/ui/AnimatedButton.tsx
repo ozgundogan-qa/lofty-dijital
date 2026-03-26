@@ -8,7 +8,7 @@ import { ReactNode } from "react";
 interface AnimatedButtonProps {
     children: ReactNode;
     href?: string;
-    icon?: LucideIcon;
+    icon?: ReactNode;
     variant?: "primary" | "secondary" | "outline";
     className?: string;
     onClick?: () => void;
@@ -44,7 +44,7 @@ export default function AnimatedButton({
                     scale: 1.02,
                 },
             }}
-            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
         >
             <span className="relative z-10 flex items-center">
                 {Icon && (
@@ -56,7 +56,7 @@ export default function AnimatedButton({
                         transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
                         className="mr-2 flex items-center"
                     >
-                        <Icon className="w-5 h-5" />
+                        {Icon}
                     </motion.span>
                 )}
                 {children}
